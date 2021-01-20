@@ -1,0 +1,155 @@
+html,
+body {
+  box-sizing: border-box;
+  scroll-behavior: smooth; }
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit; }
+
+body {
+  min-height: 100vh;
+  margin: 0;
+  padding: 0;
+  font-size: 100%;
+  line-height: 1.4; }
+
+@media (prefers-reduced-motion: reduce) {
+  * {
+    -webkit-animation-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+    -webkit-animation-iteration-count: 1 !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important; } }
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0 0 0.65rem; }
+
+h1 {
+  font-size: 1.65em;
+  /* Default size === h2 */ }
+
+p {
+  margin: 0 0 0.55rem; }
+
+a {
+  text-decoration: none;
+  cursor: pointer; }
+
+a:hover {
+  text-decoration: underline; }
+
+a:focus {
+  outline: thin dotted; }
+
+ul,
+ol,
+dd {
+  margin: 0;
+  padding: 1rem;
+  list-style: none; }
+
+button {
+  color: inherit;
+  border-width: 0;
+  padding: 0;
+  cursor: pointer; }
+
+img,
+video {
+  max-width: 100%;
+  height: auto; }
+
+figure {
+  margin: 0; }
+
+figcaption {
+  font-size: 0.9em; }
+
+cite {
+  font-style: normal; }
+
+fieldset {
+  border-width: 0;
+  padding: 0;
+  margin: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+input,
+button,
+textarea,
+select {
+  box-sizing: border-box;
+  margin: 0.25em 0;
+  display: inline-block;
+  vertical-align: middle;
+  white-space: normal;
+  font: inherit;
+  line-height: 1; }
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: whitesmoke;
+  background: #daaaa5;
+  font-family: "Montserrat", sans-serif; }
+
+h1 {
+  margin: 0;
+  font-family: "Lobster", cursive;
+  font-size: 2.6rem;
+  font-weight: 500; }
+
+.card {
+  text-align: center;
+  position: relative;
+  z-index: 1;
+  width: 300px;
+  height: 300px;
+  border-radius: 10px;
+  user-select: none; }
+  .card .card-main {
+    background: #2f5e66;
+    padding: 1rem;
+    position: relative;
+    z-index: 0; }
+    .card .card-main:hover {
+      cursor: pointer;
+      background-color: whitesmoke;
+      color: #2f5e66; }
+  .card .card-slide {
+    position: absolute;
+    z-index: -1;
+    background: #5aabb9;
+    padding: 1rem;
+    right: 0;
+    left: 0;
+    top: 0;
+    height: 25%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: all 0.4s; }
+  .card:hover .card-slide {
+    transform: translateY(125%); }
+
+.fab {
+  font-size: 2rem;
+  padding: 0.4em;
+  color: whitesmoke;
+  cursor: pointer;
+  transition: all ease 0.3s; }
+  .fab:hover {
+    color: #2f5e66; }
+  .fab:active {
+    transform: translateX(1); }
