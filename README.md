@@ -2,6 +2,8 @@
 
 Exercise on positioning and transitions 
 
+![Follow me](/img/followme.gif)
+
 ---
 
 ### License
